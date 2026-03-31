@@ -1,19 +1,17 @@
-{"timestamp":"2025-01-01T10:00:00Z","level":"info","service":"auth-service","msg":"Server started","port":8080}
-{"timestamp":"2025-01-01T10:00:05Z","level":"info","service":"auth-service","msg":"User login successful","user_id":"u_001","ip":"192.168.1.10"}
-{"timestamp":"2025-01-01T10:00:12Z","level":"warn","service":"auth-service","msg":"Failed login attempt","user_id":"u_002","ip":"203.0.113.45","attempts":3}
-{"timestamp":"2025-01-01T10:01:00Z","level":"info","service":"api-gateway","msg":"Request received","method":"GET","path":"/api/users","latency_ms":12}
-{"timestamp":"2025-01-01T10:01:30Z","level":"error","service":"db-service","msg":"Connection timeout","host":"postgres:5432","retry":1}
-{"timestamp":"2025-01-01T10:01:35Z","level":"error","service":"db-service","msg":"Connection timeout","host":"postgres:5432","retry":2}
-{"timestamp":"2025-01-01T10:01:40Z","level":"info","service":"db-service","msg":"Connection restored","host":"postgres:5432"}
-{"timestamp":"2025-01-01T10:02:00Z","level":"info","service":"api-gateway","msg":"Request received","method":"POST","path":"/api/data","latency_ms":45}
-{"timestamp":"2025-01-01T10:02:15Z","level":"warn","service":"cache-service","msg":"Cache miss rate high","rate":0.87,"threshold":0.5}
-{"timestamp":"2025-01-01T10:03:00Z","level":"info","service":"worker","msg":"Job completed","job_id":"j_9921","duration_ms":1200}
-{"timestamp":"2025-01-01T10:03:30Z","level":"debug","service":"worker","msg":"Processing queue","queue_depth":14}
-{"timestamp":"2025-01-01T10:04:00Z","level":"error","service":"payment-service","msg":"Payment gateway unreachable","gateway":"stripe","status_code":503}
-{"timestamp":"2025-01-01T10:04:05Z","level":"critical","service":"payment-service","msg":"Payment processing halted","reason":"gateway_down"}
-{"timestamp":"2025-01-01T10:05:00Z","level":"info","service":"payment-service","msg":"Payment gateway recovered","gateway":"stripe"}
-{"timestamp":"2025-01-01T10:06:00Z","level":"info","service":"auth-service","msg":"Token refreshed","user_id":"u_001"}
-{"timestamp":"2025-01-01T10:07:10Z","level":"warn","service":"api-gateway","msg":"Rate limit approaching","user_id":"u_005","requests":95,"limit":100}
-{"timestamp":"2025-01-01T10:08:00Z","level":"info","service":"worker","msg":"Job queued","job_id":"j_9922","priority":"high"}
-{"timestamp":"2025-01-01T10:09:00Z","level":"error","service":"storage-service","msg":"Disk usage critical","used_pct":92,"mount":"/var/data"}
-{"timestamp":"2025-01-01T10:10:00Z","level":"info","service":"api-gateway","msg":"Health check passed","uptime_s":600}
+{"timestamp":"2026-03-31T11:09:39Z","level":"info","service":"auth-service","msg":"Server started","port":8080}
+{"timestamp":"2026-03-31T11:09:09Z","level":"info","service":"auth-service","msg":"User login successful","user_id":"u_001","ip":"192.168.1.10"}
+{"timestamp":"2026-03-31T11:08:39Z","level":"warn","service":"auth-service","msg":"Failed login attempt","user_id":"u_002","ip":"203.0.113.45","attempts":3}
+{"timestamp":"2026-03-31T11:08:09Z","level":"info","service":"api-gateway","msg":"Request received","method":"GET","path":"/api/users","latency_ms":12}
+{"timestamp":"2026-03-31T11:07:39Z","level":"error","service":"db-service","msg":"Connection timeout","host":"postgres:5432","retry":1}
+{"timestamp":"2026-03-31T11:07:09Z","level":"error","service":"db-service","msg":"Connection timeout","host":"postgres:5432","retry":2}
+{"timestamp":"2026-03-31T11:06:39Z","level":"info","service":"db-service","msg":"Connection restored","host":"postgres:5432"}
+{"timestamp":"2026-03-31T11:06:09Z","level":"info","service":"api-gateway","msg":"Request received","method":"POST","path":"/api/data","latency_ms":45}
+{"timestamp":"2026-03-31T11:05:39Z","level":"warn","service":"cache-service","msg":"Cache miss rate high","rate":0.87,"threshold":0.5}
+{"timestamp":"2026-03-31T11:05:09Z","level":"info","service":"worker","msg":"Job completed","job_id":"j_9921","duration_ms":1200}
+{"timestamp":"2026-03-31T11:04:39Z","level":"debug","service":"worker","msg":"Processing queue","queue_depth":14}
+{"timestamp":"2026-03-31T11:04:09Z","level":"error","service":"payment-service","msg":"Payment gateway unreachable","gateway":"stripe","status_code":503}
+{"timestamp":"2026-03-31T11:03:39Z","level":"critical","service":"payment-service","msg":"Payment processing halted","reason":"gateway_down"}
+{"timestamp":"2026-03-31T11:03:09Z","level":"info","service":"payment-service","msg":"Payment gateway recovered","gateway":"stripe"}
+{"timestamp":"2026-03-31T11:02:39Z","level":"warn","service":"api-gateway","msg":"Rate limit approaching","user_id":"u_005","requests":95,"limit":100}
+{"timestamp":"2026-03-31T11:02:09Z","level":"error","service":"storage-service","msg":"Disk usage critical","used_pct":92,"mount":"/var/data"}
+{"timestamp":"2026-03-31T11:01:39Z","level":"info","service":"api-gateway","msg":"Health check passed","uptime_s":600}
