@@ -1,0 +1,28 @@
+filebeat.inputs:
+  - type: log
+    enabled: true
+    paths:
+      - /data/*.log
+      - /data/**/*.log
+    fields:
+      log_source: filebeat
+    fields_under_root: true
+    # Collapse multiline stack traces into a single event
+    multiline.pattern: '^\s'
+    multiline.negate: false
+    multiline.match: after
+
+# Ship to Logstash — Filebeat will retry until Logstash is ready
+output.logstash:
+  hosts: ["logstash:5044"]
+  # Retry settings so Filebeat keeps trying if Logstash isn't up yet
+  timeout: 15
+  max_retries: -1   # retry forever
+
+# Enable HTTP endpoint so Docker healthcheck can probe it
+http.enabled: true
+http.host: "0.0.0.0"
+http.port: 5066
+
+logging.level: info
+logging.to_files: false   # log to stdout so docker logs works cleanly
